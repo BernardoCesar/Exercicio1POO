@@ -1,6 +1,6 @@
 package ESPM.POO.EX1;
 
-public class Cartao {
+public class CartaodeCredito {
     int numero;
     double fatura;
 
