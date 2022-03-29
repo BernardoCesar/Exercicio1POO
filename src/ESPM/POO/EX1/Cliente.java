@@ -6,9 +6,11 @@ public class Cliente {
     Conta conta= new Conta();
     CartaodeCredito cartaodeCredito= new CartaodeCredito();
 
-    public void retornarDados () {
-        System.out.println("Nome: " + nome);
-        System.out.println("CPF: " + cpf);
+    public String retornarDados () {
+        return "{Nome: " + nome+
+        "CPF: " + cpf + "}";
+        //como pegar os dados da conta tbm?
+    
     }
 
 }
