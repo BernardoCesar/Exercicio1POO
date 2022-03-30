@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Cliente cliente1= new Cliente();
+        cliente1.conta.depositar(100);
 
         Scanner scan=new Scanner(System.in);
 
@@ -14,7 +15,7 @@ public class Main {
         System.out.println("Insira o CPF:");
         cliente1.cpf=scan.nextLine();
 
-        cliente1.retornarDados();
+        System.out.println(cliente1.retornarDados());
     }
     
 }

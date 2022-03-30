@@ -2,7 +2,7 @@ package ESPM.POO.EX1;
 
 public class Conta {
     int numero;
-    double saldo;
+    double saldo=0.00;
     double limite;
 
     public void consultarSaldo () {
