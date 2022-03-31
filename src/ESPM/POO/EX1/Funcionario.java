@@ -8,16 +8,19 @@ public class Funcionario {
     double valeRefeicao=550.00;
 
     public String retornarDados(){
-        return "{nome: "+ nome + "CPF: " + cpf + "salario: " + salario + "VR: " + valeRefeicao + "}";
+        return "{nome: "+ nome + " CPF: " + cpf + " salario: " + salario + " VR: " + valeRefeicao + "}";
 
     }
     public void aumentarSalario(double aumentoPorc){
-        salario=salario*aumentoPorc;
+        salario=((aumentoPorc/100)+1)*salario;
+        System.out.println("Operação concluída");
 
 
     }
-    public void ajustarValeRefeicao(double aumentoVR){
-        valeRefeicao=valeRefeicao*aumentoVR;
+    public void ajustarValeRefeicao(double aumentoPorc){
+        valeRefeicao=((aumentoPorc/100)+1)*valeRefeicao;
+        System.out.println("Operação concluída");
+
     }
 
     

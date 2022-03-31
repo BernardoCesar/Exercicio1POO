@@ -3,7 +3,7 @@ package ESPM.POO.EX1;
 public class Conta {
     int numero;
     double saldo=0.00;
-    double limite;
+    double limite=1000;
 
     public void consultarSaldo () {
         System.out.println("Saldo: " + saldo);
@@ -34,11 +34,24 @@ public class Conta {
 
     }
 
-    public String gerarExtrato(){
+    public String gerarExtratoRecorrente(){
 
         return "Extrato: "+ saldo;
     }
-    public void transferir(){
+
+    public String gerarExtrato(){
+
+        return "Extrato: "+ saldo +"\n Último depósito: " +saldo+ " \n Último saque:"+saldo;
+    }
+    public void transferir(Conta conta, double valor){
+        
+        if(this.saldo<valor){
+            System.out.println("Não é possível realizar a operação");
+        }else{
+        this.saldo-=valor;
+        conta.saldo+=valor;
+        System.out.println("Operação concluída");
+        }
 
     }
     

@@ -10,7 +10,7 @@ public class Cliente {
 	
     public String retornarDados () {
             return "{Nome: " + nome+
-            " CPF: " + cpf +"}" + conta.retornarDados() + "}";
+            " CPF: " + cpf +"}" + cartaodeCredito.retornarDados()+ conta.retornarDados() + "}";
       
     
     }
