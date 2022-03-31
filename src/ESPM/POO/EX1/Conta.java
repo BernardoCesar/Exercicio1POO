@@ -41,7 +41,7 @@ public class Conta {
 
     public String gerarExtrato(){
 
-        return "Extrato: "+ saldo +"\n Último depósito: " +saldo+ " \n Último saque:"+saldo;
+        return "Extrato: "+ saldo;
     }
     public void transferir(Conta conta, double valor){
         
