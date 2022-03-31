@@ -34,7 +34,16 @@ public class Conta {
 
     }
 
-    public String gerarExtratoRecorrente(){
+    public String gerarExtratoDias(int dias){
+        if(dias==0){
+            for(int i=0; i<7; i++){
+                System.out.println("Dia " +i+ " :" +saldo);
+            }
+        }else{
+            for(int i=0; i<dias;i++){
+                System.out.println("Dia " +i+ " :" +saldo);
+            }
+        }
 
         return "Extrato: "+ saldo;
     }

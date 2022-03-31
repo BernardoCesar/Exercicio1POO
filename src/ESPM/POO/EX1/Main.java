@@ -47,7 +47,18 @@ public class Main {
        func.ajustarValeRefeicao(aumentoPorc);
        System.out.println(func.retornarDados()); 
 
+      
+    
+       int dias;
+        
+       System.out.println("Insira os dias do extrato: ");
+       dias=scan.nextInt();
+       cliente1.conta.gerarExtratoDias(dias);
 
+     
+
+        
+        
 
         
    
